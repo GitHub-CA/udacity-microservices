@@ -1,0 +1,8 @@
+version: "3.7"
+services: 
+  predictor:
+    build: .
+    volumes: 
+      - "./model_data:/app"
+      - "./output_txt_files:/app/output_txt_files"
+  
