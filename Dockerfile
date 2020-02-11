@@ -1,7 +1,8 @@
 FROM python:3.7.3-stretch
 
 WORKDIR /app
-ADD ./app/* /app/
+COPY  app.py make_prediction.sh requirements.txt ./
+COPY ./model_data ./model_data
 # hadolint ignore=DL3013
 RUN python -m venv venv 
 RUN . venv/bin/activate
