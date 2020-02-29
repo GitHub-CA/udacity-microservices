@@ -1,6 +1,4 @@
-[![CircleCI](https://app.circleci.com/github/psnx/udacity-microservices.svg?style=svg&circle-token=c73bf925b7c863c1cf3f37b2daac63bfc521a846)](https://app.circleci.com/github/psnx/udacity-microservices)
-
-![CircleCI](https://app.circleci.com/github/psnx/udacity-microservices/pipelines)
+[![CircleCI](https://circleci.com/github/psnx/udacity-microservices.svg?style=svg&circle-token=c73bf925b7c863c1cf3f37b2daac63bfc521a846)](https://circleci.com/github/psnx/udacity-microservices)
 
 ## Project Overview
 
