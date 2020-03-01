@@ -27,7 +27,7 @@ The project goal was to operationalize this working, machine learning microservi
 
 ### Running `app.py`
 
-1. Standalone:  `python app.py`
+1. Standalone:  `python app.py` (in the virtualenv you created)
 2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+3. Run in Kubernetes:  `./run_kubernetes.sh` (make sure the cluster is running, e.g minikube: minikube start)
 

@@ -9,6 +9,8 @@ dockerpath=psnx/udacity-predictor
 
 # Step 2:  
 # Authenticate & tag
+docker login
+docker system info | grep Registry
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
