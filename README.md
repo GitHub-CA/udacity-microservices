@@ -3,7 +3,7 @@
 ## Project Overview
 
 Udacity - Cloud DevOps Engineer Nanodegree Program, project Operationalize a Machine Learning Microservice API.
-The code is based on Udacity's startercode.
+This work is based on [Udacity's starter code](https://github.com/udacity/DevOps_Microservices). 
 
 In this repo given a pre-trained, `sklearn` model is included that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). 
 
