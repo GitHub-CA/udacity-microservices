@@ -13,7 +13,7 @@ In this repo a pre-trained, `sklearn` model is included that has been trained to
 * Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
 
-Linux and Mac and Windows 10 WSL:
+Linux, Mac and Windows 10 WSL:
 ```bash
 $ python -m venv venv
 $ source venv/bin/activate
