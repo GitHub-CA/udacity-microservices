@@ -1,33 +1,32 @@
 [![CircleCI](https://circleci.com/gh/psnx/udacity-microservices.svg?style=shield&circle-token=c73bf925b7c863c1cf3f37b2daac63bfc521a846)](https://circleci.com/gh/psnx/udacity-microservices)
 
-## Project Overview
+## What is this?
 
-Udacity - Cloud DevOps Engineer Nanodegree Program, project Operationalize a Machine Learning Microservice API.
-This work is based on [Udacity's starter code](https://github.com/udacity/DevOps_Microservices). 
+This repo´s only purpose is to demonstrate how to containerize a simple project with `docker`or `kubernetes`. 
 
-In this repo given a pre-trained, `sklearn` model is included that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). 
+It is made as part of the curriculum of Udacity's Cloud DevOps Engineer Nanodegree Program, project Operationalize a Machine Learning Microservice API.
+This work is based on [Udacity's starter code](https://github.com/udacity/DevOps_Microservices).   
+In this repo a pre-trained, `sklearn` model is included that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing).  
 
-### Project Tasks
-
-The project goal was to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. Projects tasks_
-* Test the project code using linting
-* Complete a Dockerfile to containerize this application
-* Deploy a containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
-* Configure Kubernetes and create a Kubernetes cluster
-* Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
-
-
-
-## Setup the Environment (for native use)
-
+## Installation
+### Setup the Environment (for native use)
 * Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
 
-### Running `app.py`
-
-1. Standalone:  `python app.py` (in the virtualenv you created)
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh` (make sure the cluster is running, e.g minikube: minikube start)
-
+Linux and Mac and Windows 10 WSL:
+```bash
+$ python -m venv venv
+$ source venv/bin/activate
+(venv)$ make install
+```
+## Usage
+### Using with docker
+```bash
+$ ./run_docker.sh
+```
+### Using with kubernetes
+```bash
+$ ./run_kubernetes.sh
+```
+### Make a prediction
+Either run `make_prediction.sh` or send a http `POST` request to the the respective endpoint, `http://localhost:80/predict`. Study the `make_prediction.sh` file as to how the payload should look like.
