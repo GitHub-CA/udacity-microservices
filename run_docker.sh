@@ -12,4 +12,4 @@ docker images
 docker run predicotor -p 80:80
 
 #Remark:
-#The image was renamed for uploading to docker hub to psnx/udacity-predictor
+#The image was renamed for uploading to docker hub to psnx/udacity-predictor:ver.1
